@@ -1,0 +1,141 @@
+body {
+  font-family: 'Playfair Display', serif; }
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, hr {
+  margin: 0;
+  padding: 0; }
+
+a {
+  display: inline-block; }
+
+header {
+  background-color: #231F20;
+  height: 30px;
+  padding: 15px 0; }
+  header .container img {
+    float: left;
+    height: 26px;
+    padding: 0 10px; }
+
+/* RIGHT NAV_______________________________ */
+.right-nav {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: sans-serif; }
+
+li {
+  display: inline-block;
+  font-size: .8rem; }
+
+.right-nav a, .drop-trigger {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid transparent; }
+
+a:hover {
+  text-decoration: underline; }
+
+.list-car a {
+  border: 1px solid white;
+  transition: .3s ease-in-out;
+  display: none; }
+
+.list-car a:hover {
+  background-color: #383435;
+  text-decoration: none; }
+
+/* RIGHT NAV DROPDOWN MENU_______________________________ */
+.drop-trigger {
+  position: relative;
+  padding-bottom: 25px; }
+
+.drop-trigger:hover {
+  cursor: default; }
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: absolute;
+  right: 10px;
+  top: -10px; }
+
+.dropdown {
+  position: absolute;
+  margin: 0;
+  background-color: white;
+  right: -5px;
+  top: 44px;
+  line-height: 2rem;
+  list-style-type: none;
+  -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
+  display: none; }
+
+.dropdown li {
+  margin: 0; }
+
+.dropdown li a {
+  width: 165px;
+  color: black; }
+
+.dropdown li a:hover {
+  background-color: lightgrey;
+  text-decoration: none; }
+
+hr {
+  width: 175px;
+  position: relative;
+  left: 5px; }
+
+.drop-trigger:hover .dropdown {
+  display: block; }
+
+.hero {
+  text-align: center;
+  background-image: url(../images/winter-mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 130px 0 200px;
+  z-index: -1; }
+  .hero h5 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .hero h1 {
+    font-size: 2.7rem;
+    margin-bottom: 100px;
+    padding: 0 20px; }
+  .hero input {
+    padding: 15px;
+    width: 340px; }
+
+@media (min-width: 767px) {
+  header .container {
+    width: 750px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto; }
+    header .container img {
+      height: 30px; }
+    header .container .list-car a {
+      display: inline-block; }
+
+  .hero h1 {
+    font-size: 4rem; } }
+@media (min-width: 992px) {
+  header .container {
+    width: 940px; }
+
+  .hero h1 {
+    font-size: 5rem; } }
+
+/*# sourceMappingURL=styles.css.map */
